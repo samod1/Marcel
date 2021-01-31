@@ -12,7 +12,7 @@
     <ul>
         <li><a href="vloz.php">Vkladaj</a></li>
         <li><a href="citaj.php">Citaj</a></li>
-        <li><a href="#">Vkladaj zavercne pracu</a></li>
+        <li><a href="Zav_praca.php">Vkladaj zavercne pracu</a></li>
         <li><a href="#">O mne</a></li>
         <li><a href="#">Kontakt</a></li>
 

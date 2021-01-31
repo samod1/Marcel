@@ -1,6 +1,11 @@
 <?php
 include "config.php";
+<<<<<<< HEAD
 if ($_GET["zmazat"] == "ano" && $_GET["id"] != "") {
+=======
+$zmaz=$_GET["zmazat"];
+if ($zmaz == "ano" && $_GET["id"] != "") {
+>>>>>>> Verzia 31.01.2021 22:05
 
     $id = $_GET["id"];
     $query = "DELETE FROM student WHERE id=?";

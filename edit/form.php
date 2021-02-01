@@ -1,4 +1,4 @@
-<form action="../edituj.php" method="POST" onsubmit="return confirm('Naozaj chces vykonat tieto zmeny ?');">
+<form action="./edituj.php" method="POST" onsubmit="return confirm('Naozaj chces vykonat tieto zmeny ?');">
 
     <fieldset>
         <legend>Osobne udaje</legend>

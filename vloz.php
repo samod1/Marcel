@@ -16,19 +16,21 @@ include "menu.php";
 
     <label for="odbor">ODBOR</label>
     <select name="odbor">
-        <option label="Aplikovaná informatika a automatizácia v priemysle">1</option>
-        <option label="Integrovaná bezpečnosť">2</option>
-        <option label="Kvalita produkcie">3</option>
-        <option label="Materiálové inžinierstvo">4</option>
-        <option label="Mechatronika v technologických zariadeniach">5</option>
-        <option label="Personálna práca v priemyselnom podniku">6</option>
-        <option label="Počítačová podpora výrobných technológií">7</option>
-        <option label="Priemyselné manažérstvo">8</option>
-        <option label="Výrobné technológie">9</option>
-        <option label="Výrobné technológie a výrobný manažment">10</option>
-        <option label="Výrobné zariadenia a systémy">11</option>
-    </select><br>
 
+        <?php
+            $query="SELECT nazovOdb, id_odboru FROM odbor ORDER BY id_odboru ASC";
+            $result=mysqli_query($conn,$query);
+            if(!$result)
+            {
+                echo "chyba pri SQL dopyte";
+            }
+
+            while ($row=mysqli_fetch_assoc($result))
+        {
+        ?>
+        <option value="<?php $row["nazov"] ?>"><?php echo $row["id_odboru"]?></option>
+    </select><br>
+    <?}?>
     <input type="submit" value="vlozit">
     <input type="hidden" name="vlozit" value="ano">
 </form>
@@ -36,7 +38,5 @@ include "menu.php";
 <?php
     include "insertstud.php";
     mysqli_close($conn);
-include "footer.php";
-    ?>
-
-
+    include "footer.php";
+?>

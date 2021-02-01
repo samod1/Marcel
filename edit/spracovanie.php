@@ -14,6 +14,6 @@ if ($_POST["uprav"] == "ano") {
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     mysqli_commit($conn);
-    header("Location: citaj.php");
+    header("Location: ./citaj.php");
 }
 ?>

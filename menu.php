@@ -22,5 +22,5 @@
 
     </ul>
 </nav>
-
+<?error_reporting(0);?>
 </body>

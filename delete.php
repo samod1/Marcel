@@ -1,4 +1,5 @@
 <?php
+$conn="";
 include "config.php";
 
 if ($_GET["zmazat"] == "ano" && $_GET["id"] != "") {

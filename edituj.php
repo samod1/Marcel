@@ -1,4 +1,5 @@
 <?php
+$conn="";
 include "config.php";
 include "menu.php";
 

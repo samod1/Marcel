@@ -39,7 +39,6 @@ if(!$result)
 ?>
     <tr>
         <td><input type="radio" name="idPrace" value="<?php echo $row["id_prace"]; ?>"></td>
-
         <td> <?php echo $row["nazov"];      ?></td>
         <td> <?php echo $row["veduci"];     ?></td>
         <td> <?php echo $row["cely_nazov"]; ?></td>
@@ -55,11 +54,11 @@ if(!$result)
 
 <?php
 include "objednajPracu.php";
+
 include "footer.php";
 mysqli_close($conn);
 }
 else
 {
-    header("Location: citaj.php");
 }
 ?>

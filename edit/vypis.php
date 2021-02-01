@@ -9,6 +9,7 @@ if ($_GET["id"] != "" && $_GET["edituj"] == "ano")
         $meno = $row["meno"];
         $priezvisko = $row["priezvisko"];
 
+
     }
     include "edit/form.php";
 }

@@ -1,5 +1,6 @@
 <?php
-if ($_POST["uprav"] == "ano") {
+if ($_POST["uprav"] == "ano")
+{
     $id = $_POST["id"];
     $meno = $_POST["meno"];
     $priezvisko = $_POST["priezvisko"];

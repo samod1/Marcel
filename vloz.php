@@ -28,11 +28,15 @@ include "menu.php";
             while ($row=mysqli_fetch_assoc($result))
         {
         ?>
-        <option value="<?php $row["nazov"] ?>"><?php echo $row["id_odboru"]?></option>
-    </select><br>
-    <?}?>
+        <option value="<?php echo $row["id_odboru"]; ?>"> <?php echo $row["nazovOdb"];?> </option>
+    <?php
+        }
+    ?>
+    </select>
+    <br>
+
     <input type="submit" value="vlozit">
-    <input type="hidden" name="vlozit" value="ano">
+    <input type="hidden" name="vloz" value="ano">
 </form>
 
 <?php

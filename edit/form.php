@@ -1,3 +1,7 @@
+<?php
+$conn="";
+include "config.php";
+?>
 <form action="./edituj.php" method="POST" onsubmit="return confirm('Naozaj chces vykonat tieto zmeny ?');">
 
     <fieldset>
@@ -15,7 +19,9 @@
                value="<?php echo $priezvisko; ?>">
         </div>
     </fieldset>
-    </div>
+    <label for="odbor">ODBOR</label>
+
+    <br>
     <input class="btn btn-primary" type="submit" value="Uprav udaje"><br>
     <input type="hidden" name="uprav" value="ano">
 

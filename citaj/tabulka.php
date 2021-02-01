@@ -9,6 +9,7 @@ if(!$result)
     exit;
 }
 ?>
+<div class="table table-hover">
 <table>
     <tr>
         <th>Meno</th>
@@ -36,3 +37,4 @@ if(!$result)
     ?>
 
 </table>
+</div>
